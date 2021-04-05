@@ -27,10 +27,6 @@ PROCESSEDREADFOLDER | string | /$WORKINGFOLDER/processedFASTQ | The name of the 
 RAWBAMFOLDER | string | /$WORKINGFOLDER/rawBAM | The name of the folder for the initial alignment files
 MERGEDBAMFOLDER | string | /$WORKINGFOLDER/mergedBAM | The name of the folder for the processed alignment files
 REFGENOME | string | /home/biodocker/references/Sars_cov_2.ASM985889v3.dna_sm.toplevel.fa.gz | Path to the BWA-indexed reference genome (the default reference genome is indexed on container build for efficiency)
-SUBSAMPLE | integer | *See description* | What fraction of reads to analyze (1/x) from the FASTQ files. Default value will call a function that sets this based upon the size of the fastq files for a sliding scale.
-PERCENTILE | integer | 83 | The percentile to target for read filtering.  The default value of 83 will remove reads that are about 1 standard deviation worse than the average read for that direction in that position. You can generally expect a few percentage points below your percentile value of reads to pass the filtering.
-FILENAMINGSTANDARD | string | illumina | Naming convention for files. Currently supporting Illumina and Zymo Services (zymo). Others can be added as requested.
-
 
 
 ## Contributing

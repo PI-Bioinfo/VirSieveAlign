@@ -1,4 +1,4 @@
-# COVID Aligner
+# VirSieve Aligner
 
 ## Summary
 

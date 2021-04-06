@@ -10,9 +10,9 @@ This container is part of the Environmental Viral Detection pipeline and covers 
 The simplest way to run this pipeline is to set up a working directory where all of the subsequent files and folders will be created.  In this folder, create a folder called **rawFASTQ** where you can put your paired and unpaired raw reads.  File naming should follow the standard Illumina scheme where they will look something like this: **sample-name_S6_L001_R1_001.fastq.gz**.  Please avoid the use of dots and underscores in your sample names, as those characters are used to identify the created files during processing.  FASTQ files should all end with _.fastq_ or _.fq_ unless gzip compressed in which case they should end with _fastq.gz_ or _fq.gz_.  For adapter trimming to take place, include a FASTA-formatted file named **adapters.fa** in the rawFASTQ folder.
 
 ### Running the container
-To run this container (presumed to be named _covidalign_ here), simply use the following command:
+To run this container (presumed to be named _virsievealign_ here), simply use the following command:
 ```bash
-docker container run --rm -v /path/to/working/folder:/data covidalign
+docker container run --rm -v /path/to/working/folder:/data virsievealign
 ```
 
 ### Setting non-default options

@@ -5,7 +5,6 @@ USER root
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
     apt-get install -y python3-pip && \
-    pip install --upgrade pip && \
     apt-get install -y samtools && \
     apt-get install -y zlib1g-dev && \
     pip3 install pysam==0.16.0.1
